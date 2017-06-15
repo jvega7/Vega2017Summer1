@@ -81,11 +81,12 @@
             android:textColor="@android:color/black"/>
     </LinearLayout>
 
-    <fragment
+    <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/activity_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/activity_main_title"
         android:layout_above="@+id/activity_main_tool"
-        android:background="@android:color/darker_gray"></fragment>
+        android:background="@android:color/darker_gray"></LinearLayout>
 </RelativeLayout>
