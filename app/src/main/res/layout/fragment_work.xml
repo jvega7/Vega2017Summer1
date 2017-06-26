@@ -1,15 +1,80 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
     tools:context="com.example.jarro.vega2017summer.fragment.WorkFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:id="@+id/textview_quiz1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
         android:gravity="center"
-        android:text="hello_work_fragment" />
+        android:text="This fragment is used for quizes!"
+        android:background="@android:color/holo_blue_dark"/>
+        <LinearLayout
+            android:id="@+id/quiz1_linearlayout_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textview_quiz1">
+            <Button
+                android:id="@+id/button_quiz1"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quiz1"/>
+            <Button
+                android:id="@+id/button2_quiz2"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quiz2"/>
+            <Button
+                android:id="@+id/button2_quiz3"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quiz3"/>
+         </LinearLayout>
+        <Button
+            android:id="@+id/quiz1_submitButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quiz1_linearlayout_buttons"
+            android:text="SUBMIT"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_dark"
+            />
 
-</FrameLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

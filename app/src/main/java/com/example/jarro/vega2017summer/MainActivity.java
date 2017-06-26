@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         };
         tv_work.setOnClickListener(listener);
     }
-    public void login(View v){
+    public void login(View v) {
         Toast.makeText(MainActivity.this, "You clicked login", Toast.LENGTH_SHORT).show();
 
     }

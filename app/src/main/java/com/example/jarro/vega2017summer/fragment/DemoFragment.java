@@ -12,9 +12,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 
+import com.example.jarro.vega2017summer.ActivityA;
+import com.example.jarro.vega2017summer.AdvanceListViewActivity;
+import com.example.jarro.vega2017summer.NinePatchActivity;
+import com.example.jarro.vega2017summer.NotificationActivity;
 import com.example.jarro.vega2017summer.R;
+import com.example.jarro.vega2017summer.ResultActivity;
+import com.example.jarro.vega2017summer.ScaleTypeActivity;
 import com.example.jarro.vega2017summer.ViewPagerActivity;
 import com.example.jarro.vega2017summer.adapter.ListNormalAdapter;
+import com.example.jarro.vega2017summer.audio.BaseBean;
 
 import java.util.ArrayList;
 
@@ -30,9 +37,9 @@ public class DemoFragment extends Fragment {
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
         contentList.add("9Patch");
-        contentList.add("A");
-        contentList.add("B");
-        contentList.add("C");
+        contentList.add("Notification");
+        contentList.add("AdvanceListView");
+        contentList.add("ActivityA");
         contentList.add("D");
         contentList.add("E");
         contentList.add("F");
@@ -67,6 +74,31 @@ public class DemoFragment extends Fragment {
                         Intent intent = new Intent(getActivity(), ViewPagerActivity.class);
                         startActivity(intent);
                         break;
+                    case 1:
+                        Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case 2:
+                      Intent intent2 = new Intent(getActivity(), NinePatchActivity.class);
+                      startActivity(intent2);
+                       break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
+                        startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(getActivity(), ActivityA.class);//
+                        startActivity(intent5);
+                        break;
+//                    case 7:
+//                        Intent intent7 = new Intent(getActivity(), ResultActivity.class);
+//                        //startActivity(intent7);
+//                        startActivity(intent7);
+//                        break;
                     default:
                 }
             }
