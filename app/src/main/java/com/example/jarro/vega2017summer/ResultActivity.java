@@ -15,7 +15,7 @@ public class ResultActivity extends BaseActivity {
     @OnClick(R.id.activity_result_bt1)
     public void toResult(View view){
         Intent intent = new Intent(this,ResultActivity1.class);
-        startActivityForResult(intent,400);
+        startActivityForResult(intent,ACTIVITY1);
     }
     @OnClick(R.id.activity_result_bt2)
     public void toResult2(View view){
@@ -32,13 +32,14 @@ public class ResultActivity extends BaseActivity {
     protected void onActivityResult(int resultCode,int requestCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         String s = data.getStringExtra("Data");
-        switch(requestCode){
+        switch(resultCode){
             case ACTIVITY1:
-                //showToast(s + "FromResultActivity1");
+                shortToast(s + "FromResultActivity1");
                 break;
             case ACTIVITY2:
-                //showToast(s + "FromResultActivity");
+                shortToast(s + "FromResultActivity");
                 break;
+            default:
         }
     }
 }

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ResultActivity1 extends AppCompatActivity {
+public class ResultActivity1 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +13,6 @@ public class ResultActivity1 extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){
-        setResult(200,new Intent().putExtra("Data","data"));
         Intent intent = new Intent();
         intent.putExtra("Data","Data");
         setResult(RESULT_OK,intent);

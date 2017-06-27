@@ -13,7 +13,6 @@ public class ResultActivity2 extends BaseActivity {
     }
     @Override
     public void onBackPressed(){
-        setResult(200,new Intent().putExtra("Data","data"));
         Intent intent = new Intent();
         intent.putExtra("Data","Data");
         setResult(RESULT_OK,intent);

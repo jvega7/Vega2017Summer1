@@ -14,6 +14,7 @@ import android.widget.ListView;
 
 import com.example.jarro.vega2017summer.ActivityA;
 import com.example.jarro.vega2017summer.AdvanceListViewActivity;
+import com.example.jarro.vega2017summer.CheckBoxActivity;
 import com.example.jarro.vega2017summer.NinePatchActivity;
 import com.example.jarro.vega2017summer.NotificationActivity;
 import com.example.jarro.vega2017summer.R;
@@ -22,6 +23,7 @@ import com.example.jarro.vega2017summer.ScaleTypeActivity;
 import com.example.jarro.vega2017summer.ViewPagerActivity;
 import com.example.jarro.vega2017summer.adapter.ListNormalAdapter;
 import com.example.jarro.vega2017summer.audio.BaseBean;
+import com.example.jarro.vega2017summer.video.RadioGroupActivity;
 
 import java.util.ArrayList;
 
@@ -40,9 +42,9 @@ public class DemoFragment extends Fragment {
         contentList.add("Notification");
         contentList.add("AdvanceListView");
         contentList.add("ActivityA");
-        contentList.add("D");
-        contentList.add("E");
-        contentList.add("F");
+        contentList.add("ActivityResult");
+        contentList.add("RadioButton");
+        contentList.add("CheckBox");
         contentList.add("G");
         contentList.add("H");
         contentList.add("I");
@@ -94,11 +96,18 @@ public class DemoFragment extends Fragment {
                         Intent intent5 = new Intent(getActivity(), ActivityA.class);//
                         startActivity(intent5);
                         break;
-//                    case 7:
-//                        Intent intent7 = new Intent(getActivity(), ResultActivity.class);
-//                        //startActivity(intent7);
-//                        startActivity(intent7);
-//                        break;
+                    case 6:
+                        Intent intent6 = new Intent(getActivity(), ResultActivity.class);
+                        startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(getActivity(), RadioGroupActivity.class);
+                        startActivity(intent7);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(getActivity(), CheckBoxActivity.class);
+                        startActivity(intent8);
+                        break;
                     default:
                 }
             }
