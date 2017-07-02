@@ -15,6 +15,7 @@ import android.widget.ListView;
 import com.example.jarro.vega2017summer.ActivityA;
 import com.example.jarro.vega2017summer.AdvanceListViewActivity;
 import com.example.jarro.vega2017summer.CheckBoxActivity;
+import com.example.jarro.vega2017summer.DialogActivity;
 import com.example.jarro.vega2017summer.NinePatchActivity;
 import com.example.jarro.vega2017summer.NotificationActivity;
 import com.example.jarro.vega2017summer.R;
@@ -45,7 +46,7 @@ public class DemoFragment extends Fragment {
         contentList.add("ActivityResult");
         contentList.add("RadioButton");
         contentList.add("CheckBox");
-        contentList.add("G");
+        contentList.add("Dialog");
         contentList.add("H");
         contentList.add("I");
         contentList.add("J");
@@ -107,6 +108,10 @@ public class DemoFragment extends Fragment {
                     case 8:
                         Intent intent8 = new Intent(getActivity(), CheckBoxActivity.class);
                         startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(getActivity(), DialogActivity.class);
+                        startActivity(intent9);
                         break;
                     default:
                 }
