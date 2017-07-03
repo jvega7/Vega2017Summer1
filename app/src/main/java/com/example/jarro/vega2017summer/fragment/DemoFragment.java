@@ -16,6 +16,7 @@ import com.example.jarro.vega2017summer.ActivityA;
 import com.example.jarro.vega2017summer.AdvanceListViewActivity;
 import com.example.jarro.vega2017summer.CheckBoxActivity;
 import com.example.jarro.vega2017summer.DialogActivity;
+import com.example.jarro.vega2017summer.HandlerActivity;
 import com.example.jarro.vega2017summer.NinePatchActivity;
 import com.example.jarro.vega2017summer.NotificationActivity;
 import com.example.jarro.vega2017summer.R;
@@ -47,7 +48,7 @@ public class DemoFragment extends Fragment {
         contentList.add("RadioButton");
         contentList.add("CheckBox");
         contentList.add("Dialog");
-        contentList.add("H");
+        contentList.add("Handler");
         contentList.add("I");
         contentList.add("J");
         contentList.add("K");
@@ -112,6 +113,10 @@ public class DemoFragment extends Fragment {
                     case 9:
                         Intent intent9 = new Intent(getActivity(), DialogActivity.class);
                         startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(getActivity(), HandlerActivity.class);
+                        startActivity(intent10);
                         break;
                     default:
                 }
